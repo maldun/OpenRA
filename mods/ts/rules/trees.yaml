@@ -119,6 +119,22 @@ VEINHOLE:
 	MapEditorData:
 		Categories: Resource spawn
 	Interactable:
+	HitShape:
+	Health:
+		HP: 50000
+	Armor:
+		Type: Wood
+	Targetable:
+		TargetTypes: Trees, NoAutoTarget, Ground, Vehicle
+	GrantConditionOnDamageState@DAMAGED:
+		Condition: damaged
+		ValidDamageStates: Light
+	ChangesHealth:
+		StartIfBelow: 49999
+		Step: -1
+		RequiresCondition: Light
+	WithIdleAnimation:
+		Interval: 500, 1000
 
 ^TibFlora:
 	Inherits: ^Tree

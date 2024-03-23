@@ -311,10 +311,18 @@ fona15:
 		Filename: fona15.tem
 
 veinhole:
-	idle:
+	Defaults:
 		TilesetFilenames:
 			TEMPERATE: veinhole.tem
 			SNOW: veinhole.sno
-		ShadowStart: 1
+	idle:
+		ShadowStart: 12
 		Offset: 0, -36, 1
 		ZRamp: 1
+	active:
+		Offset: 0, -36, 1
+		ZRamp: 1
+		ShadowStart: 12
+		Start: 1
+		Length: 11
+		Tick: 120
